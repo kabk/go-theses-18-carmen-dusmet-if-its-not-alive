@@ -46,6 +46,18 @@ body {
   font-family: 'Arial';
 }
 
+.togo{
+  position: fixed;
+  background-color: yellow;
+  color: black;
+  z-index: 4;
+  top: 600px;
+  left: 100px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
 
 #header-visual {
   position: fixed;
