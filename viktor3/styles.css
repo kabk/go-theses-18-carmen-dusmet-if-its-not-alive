@@ -1,0 +1,225 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* Global Styles */
+
+html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  font-size: 2em;
+}
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* /////// home and email //////// */
+
+.navbar {
+  position: fixed;
+  float: right !important;
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 48%;
+  text-align: right;
+  padding-right: 1em;
+  color: black;
+  text-decoration: none;
+  z-index: 10000;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding-left: 1em;
+    font-size: 1em;
+}
+
+.navbar a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* /////// ABOUT DIV //////// */
+
+.about{
+  overflow: scroll;
+  position: fixed;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: auto;
+  width: 90%;
+  z-index: 10000;
+  font-size: 1em;
+}
+
+.clicker {
+width:100px;
+outline:none;
+cursor:pointer;
+
+}
+
+.hiddendiv {
+margin-left: 20px;
+overflow-x: scroll !important;
+display:none;
+height: 50vh;
+width: 90%;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+border: 1px solid black;
+font-size: 1em;
+}
+
+.clicker:focus + .hiddendiv{
+display:block;
+}
+
+.hiddendiv h1{
+  font-size: 1em !important;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  font-size: 1em;
+}
+
+.hiddendiv p{
+  font-size: 1em !important;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: -1px;
+  font-size: 1em;
+}
+
+/* ////// project containers///// */
+
+#content{
+
+  min-width: 100%;
+  min-height: auto;
+  overflow:auto;
+  /* background-color: grey; */
+}
+
+.container-outer {
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  font-size: 0;
+
+}
+
+.container-inner {
+  width: 63000px;
+  height: 100%;
+}
+
+.container-inner img{
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.accordion-container {
+  overflow: auto;
+  position: relative;
+  width: 100%;
+  top: 10px;
+  outline: 0;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.accordion-container .article-title {
+  display: block;
+  position: relative;
+  margin: 0;
+  margin-left: 20px;
+  font-size: 2em;
+  letter-spacing: -3px;
+  line-height: 1em;
+  font-weight: normal;
+  color: black;
+  cursor: pointer;
+}
+
+.accordion-container .article-title:hover, .accordion-container .article-title:active, .accordion-container .content-entry.open .article-title {
+  color: white;
+}
+.accordion-container .article-title:hover i:before, .accordion-container .article-title:hover i:active, .accordion-container .content-entry.open i {
+  color: black;
+}
+
+.accordion-content {
+  display: none;
+  margin:0 !important;
+  width: 100%;
+}
+
+label {
+  display: block;
+  color: white;
+}
+label:hover {
+  text-decoration: line-through;
+  color: purple;
+}
+input {
+  position: absolute;
+  left: -999em;
+}
+.hide {
+  width: 100%;
+  max-height: 99em;
+  opacity: 1;
+  height: auto;
+  overflow: hidden;
+  transition: opacity .5s linear, max-height .5s linear;
+}
+.hide p {
+  margin: 0;
+  width: 70%;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+.description1 input[type="checkbox"]:checked + div {
+  opacity: 0;
+  max-height: 0;
+}
+.documentation1 input[type="checkbox"]:checked + div {
+  opacity: 0;
+  max-height: 0;
+}
+
+.description2 input[type="checkbox"]:checked + div {
+  opacity: 0;
+  max-height: 0;
+}
+.documentation2 input[type="checkbox"]:checked + div {
+  opacity: 0;
+  max-height: 0;
+}
+.documentation2-2 input[type="checkbox"]:checked + div {
+  opacity: 0;
+  max-height: 0;
+}
